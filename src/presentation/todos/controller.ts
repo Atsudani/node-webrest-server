@@ -38,7 +38,7 @@ export class TodosController {
             : res.status(404).json( {error: `TODO with id ${ id } not found.`})
 
 
-        res.json(todo);
+        // res.json(todo);
     }
 
     public createTodo = async (req: Request, res: Response) => {
